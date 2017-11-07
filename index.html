@@ -124,11 +124,11 @@
         // hook up the video switcher
         var loadUrl = document.getElementById('load-url');
         // var url = document.getElementById('url');
-        var url = "http://107.13.177.64:19459/hls/stream.m3u8";
         loadUrl.addEventListener('submit', function(event) {
           event.preventDefault();
           player.src({
-            src: url.value,
+            // src: url.value,
+            src: "http://107.13.177.64:19459/hls/stream.m3u8",
             type: 'application/x-mpegURL'
           });
           return false;
