@@ -69,7 +69,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" >YY的直播间</a>
+          <a class="navbar-brand" >测试视频</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -83,62 +83,17 @@
     <div class="container">
 
       <section class="starter-template">
-        <h1>YY的直播间</h1>
-        <p class="lead">
-          努力学习/安心睡觉/专心玩电脑/和卉卉聊天 的YY
-        </p>
+        <h1>测试视频</h1>
         <p align="center">
-        <video id=example-video class="video-js vjs-default-skin" controls>
-          <source
-             src="http://107.13.177.64:19459/hls/stream.m3u8"
-             type="application/x-mpegURL">
-        </video>
-        <br>
-        <form id=load-url>
-          <!-- <label>
-            Video URL:
-            <input id=url type=url value="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8">
-          </label> -->
-          <button type=submit style= "background-color:#B0C4DE" style>Refresh</button>
-        </form>
+          <video width="400" controls>
+            <source src="./hurt.mp4" type="video/mp4">
+          </video>
+          <br>
         </p>
 
       </section>
 
-
-
     </div><!-- /.container -->
 
-
-    <!-- Bootstrap stuff. These three scripts aren't necessary for you
-         to use videojs-contrib-hls -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
-
-    <script src="https://unpkg.com/video.js/dist/video.js"></script>
-    <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
-    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
-
-    <script>
-      (function(window, videojs) {
-        var player = window.player = videojs('example-video');
-
-        // hook up the video switcher
-        var loadUrl = document.getElementById('load-url');
-        // var url = document.getElementById('url');
-        loadUrl.addEventListener('submit', function(event) {
-          event.preventDefault();
-          player.src({
-            // src: url.value,
-            src: "http://107.13.177.64:19459/hls/stream.m3u8",
-            type: 'application/x-mpegURL'
-          });
-          return false;
-        });
-      }(window, window.videojs));
-    </script>
   </body>
 </html>
